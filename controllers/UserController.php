@@ -31,7 +31,7 @@
       $karyawan->alamat = $dataObject['data']['alamat'];
       $karyawan->telp = $dataObject['data']['telp'];
       $karyawan->email = $dataObject['data']['email'];
-      $karyawan->image_upload = $namaFile;
+      // $karyawan->image_upload = $namaFile;
       $karyawan->file_upload = $namaFile;
       $karyawan->save();
     }
@@ -50,8 +50,8 @@
       $karyawan->alamat = $dataObject->data->{'alamat'};
       $karyawan->telp = $dataObject->data->{'telp'};
       $karyawan->email = $dataObject->data->{'email'};
-      $karyawan->image_upload = $namaFile;
-      $karyawan->file_upload = $namaFile;
+      // $karyawan->image_upload = $namaFile;
+      $karyawan->file_upload = $dataObject->data->{'file_upload'};
       $karyawan->save();
 
     }

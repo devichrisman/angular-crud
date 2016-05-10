@@ -8,7 +8,7 @@
         <th>Alamat</th>
         <th>Telepon</th>
         <th>Email</th>
-        <th>File Upload IMAGE</th>
+        <!-- <th>File Upload IMAGE</th> -->
         <th>File Upload ZIP</th>
         <th>Aksi</th>
       </thead>
@@ -27,13 +27,13 @@
           <td>
             <input placeholder="Email User" type="text" class="form-control" ng-model="data.email" />
           </td>
-          <td>
+          <!-- <td>
             <input type="file" ngf-select ng-model="file" name="image_upload"
             ngf-accept="'application/png'" ngf-max-size="50MB">
-          </td>
+          </td> -->
           <td>
             <input type="file" ngf-select ng-model="file" name="file_upload"
-						ngf-accept="'application/zip'" ngf-max-size="50MB">
+						ngf-accept="'application/png'" ngf-max-size="50MB">
           </td>
           <td>
             <button class="btn btn-primary" ng-click="simpan()">Simpan</button>
@@ -45,11 +45,11 @@
           <td>{{karyawan.alamat}}</td>
           <td>{{karyawan.telp}}</td>
           <td>{{karyawan.email}}</td>
-          <td>
+          <!-- <td>
             <a href="/upload/{{karyawan.image_upload}}" class="btn btn-warning">Download</a>
-          </td>
+          </td> -->
           <td>
-            <a href="/upload/{{karyawan.file_upload}}" class="btn btn-warning">Download 2</a>
+            <a href="/upload/{{karyawan.file_upload}}" class="btn btn-warning">Download</a>
           </td>
           <td>
             <button class="btn btn-success" ng-click="preUbah(karyawan)">Ubah</button>
